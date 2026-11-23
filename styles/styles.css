@@ -1,0 +1,254 @@
+
+/* Makes HTML5 elements display correctly */
+header, nav, main, footer {
+    display: block;
+}
+
+/* Main page styling */
+body {
+    background-color: rgb(119, 203, 185);
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main wrapper */
+#wrapper {
+    width: 960px;
+    max-width: 100%;
+    margin: auto;
+    background-color: rgb(80,108,100);
+    color: rgb(34, 12, 16);
+    box-shadow: 5px 5px 5px #000000;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Heading */
+h1 {
+    background-color: rgb(14,81,53);
+    color: rgb(212,206,70);
+    min-height: 90px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3.5em;
+    position: relative;
+    padding-left: 220px;
+    padding-top: 20px;
+    text-shadow: 3px 3px 3px #90745D;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    padding-top: 10px;
+    float: left;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+nav li {
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: rgb(34, 12, 16);
+}
+
+nav a:visited {
+    color: rgb(119,203,185);
+}
+
+nav a:hover {
+    color: #3F4632;
+}
+
+nav a:focus {
+    color: orange;
+}
+
+nav a:active {
+    color: red;
+}
+
+/* Main content */
+main {
+    background-color: rgb(13,146,99);
+    margin-left: 200px;
+    padding: 1px 20px 20px 20px;
+    min-height: 300px;
+    box-sizing: border-box;
+}
+
+main img {
+    float: right;
+    max-width: 100%;
+    height: auto;
+    margin-left: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(205, 211, 213);
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+    box-sizing: border-box;
+}
+
+/* Logo */
+#logo {
+    display: block;
+    width: 1in;
+    height: 1in;
+    margin-left: -2in;
+    margin-right: auto;
+    margin-top: -.8in;
+    max-width: 100%;
+}
+
+/* Event images */
+.events {
+    display: block;
+    width: 1.9in;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: -.2in;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Tablet screens */
+@media screen and (max-width: 768px) {
+
+    #wrapper {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        padding-left: 120px;
+    }
+
+    nav {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+
+    nav ul {
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    #logo {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+/* Mobile phone screens */
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    #wrapper {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        height: auto;
+        min-height: 70px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: block;
+        padding-left: 10px;
+    }
+
+    nav li {
+        padding: 8px 0;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 15px;
+        min-height: auto;
+    }
+
+    main img {
+        float: none;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .events {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    footer {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

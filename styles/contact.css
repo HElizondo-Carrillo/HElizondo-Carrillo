@@ -1,0 +1,64 @@
+
+section#sec1 {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    float: left;
+    margin-left: 2em;
+}
+
+section#sec2 {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    gap: .5em;
+    margin-right: 2in;
+}
+
+input#sperect {
+    display: block;
+    height: .6in;
+    width: auto;
+    max-width: 100%;
+}
+
+h2#sec11 {
+    margin-top: -.5in;
+    color: rgb(13,146,99);
+}
+
+h2#sec22 {
+    margin-top: -.48in;
+    color: rgb(13,146,99);
+}
+
+/* Mobile phone screens */
+@media screen and (max-width: 480px) {
+
+    section#sec1,
+    section#sec2 {
+        display: flex;
+        flex-direction: column;
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+        gap: .5em;
+        box-sizing: border-box;
+    }
+
+    input#sperect {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: .6in;
+        box-sizing: border-box;
+    }
+
+    h2#sec11,
+    h2#sec22 {
+        margin-top: 10px;
+        color: rgb(13,146,99);
+    }
+}
